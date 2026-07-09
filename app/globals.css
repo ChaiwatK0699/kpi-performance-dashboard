@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --teal: #0e7c86;
+  --teal-soft: #0e7c8622;
+  --amber: #c98a2c;
+  --rose: #b5484f;
+  --green: #3f8f5f;
+}
+
+html[data-theme='day'] {
+  --bg: #f3f6f8;
+  --panel: #ffffff;
+  --panel-2: #eef2f4;
+  --ink: #12181f;
+  --ink-soft: #5b6672;
+  --line: rgba(10, 20, 30, 0.09);
+  --line-strong: rgba(10, 20, 30, 0.16);
+  --rail: #101823;
+  --rail-ink: #c9d3db;
+}
+
+html[data-theme='night'] {
+  --bg: #0a0f17;
+  --panel: #131b26;
+  --panel-2: #0f1620;
+  --ink: #e7ecf1;
+  --ink-soft: #8c9aaa;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.14);
+  --rail: #080c13;
+  --rail-ink: #8c9aaa;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
+.mono {
+  font-family: 'IBM Plex Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
